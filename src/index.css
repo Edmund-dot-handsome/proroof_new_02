@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Before & After Gallery Styles */
+.ba-pair {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ba-pair .card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: perspective(1000px) rotateX(2deg);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.ba-pair .card:hover {
+  transform: perspective(1000px) rotateX(0deg) translateY(-8px);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.2),
+    0 8px 15px rgba(0, 0, 0, 0.15),
+    inset 0 0 0 2px rgba(255, 255, 255, 1);
+}
+
+.ba-pair img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.1) saturate(1.15) brightness(1.02);
+  transition: filter 0.3s ease;
+}
+
+.ba-pair .card:hover img {
+  filter: contrast(1.15) saturate(1.2) brightness(1.05);
+}
+
+.ba-pair .label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.ba-pair .before-badge {
+  background: #dc2626;
+}
+
+.ba-pair .after-badge {
+  background: #16a34a;
+}
+
+.ba-pair .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: #dc2626;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+@media (max-width: 768px) {
+  .ba-pair {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .ba-pair .arrow {
+    transform: rotate(90deg);
+    margin: 0 auto;
+  }
+  
+  .ba-pair img {
+    height: 250px;
+  }
+}
+
+/* Services list styles */
+.svc-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 24px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.svc-list li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.45;
+  font-size: 15px;
+  color: #374151; /* text-gray-700 */
+}
+
+.svc-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #dc2626; /* red-600 brand color */
+}
+
+@media (max-width: 720px) {
+  .svc-list {
+    grid-template-columns: 1fr;
+  }
+}

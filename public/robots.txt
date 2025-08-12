@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block admin area
+Disallow: /admin
+
+Sitemap: https://dashing-snickerdoodle-73764c.netlify.app/sitemap.xml
