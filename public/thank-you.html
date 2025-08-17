@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - PROROOF</title>
+    <link rel="icon" type="image/png" href="/ProRoof-logo-transparent.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            object-fit: contain;
+        }
+        
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: rgba(34, 197, 94, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #22c55e;
+        }
+        
+        .checkmark::after {
+            content: '✓';
+            font-size: 2.5rem;
+            color: #22c55e;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+        
+        .phone {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #dc2626;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: #f9fafb;
+        }
+        
+        .whatsapp-btn {
+            background: #22c55e;
+            color: white;
+            margin-right: 1rem;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #16a34a;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                display: block;
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/ProRoof-logo-transparent.png" alt="PROROOF Logo" class="logo">
+        
+        <div class="checkmark"></div>
+        
+        <h1>Thank You!</h1>
+        <h1>Terima Kasih!</h1>
+        
+        <p>
+            Your inspection request has been received successfully.<br>
+            <strong>We will contact you within 2 hours.</strong>
+        </p>
+        
+        <p>
+            Permohonan pemeriksaan anda telah diterima.<br>
+            <strong>Kami akan menghubungi anda dalam masa 2 jam.</strong>
+        </p>
+        
+        <div class="contact-info">
+            <h3>Need immediate assistance? / Perlukan bantuan segera?</h3>
+            <div class="phone">017-889 7151</div>
+            <p>Call or WhatsApp us now / Telefon atau WhatsApp kami sekarang</p>
+        </div>
+        
+        <div style="margin-top: 2rem;">
+            <a href="https://wa.me/60178897151?text=I%20am%20interested%20in%20Free%20Inspection%20/%20Roof%20Leaking%20Repair.%0Ahttps%3A%2F%2Fproroof.my%2F%0A%0AName%3A%0AProblem%3A%0ABest%20Time%20for%20Inspection%20%3A" 
+               class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                WhatsApp Us
+            </a>
+            <a href="/" class="btn">Back to Home / Kembali ke Laman Utama</a>
+        </div>
+    </div>
+</body>
+</html>
