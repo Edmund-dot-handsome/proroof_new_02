@@ -6,6 +6,3 @@ https://www.proroof.my/*  https://proroof.my/:splat  301!
 
 # 3) 单页应用（SPA）重写，让刷新 /BM 或任意路径都回到 index.html
 /*  /index.html  200
-
-/thank-you        /thank-you/index.html   200
-/thank-you.html   /thank-you/index.html   200
