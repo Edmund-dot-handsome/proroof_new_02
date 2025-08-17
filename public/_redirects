@@ -1,4 +1,12 @@
-/*    /index.html   200
+# 1) 把 .netlify.app 的访问强制 301 到你的自定义域名
+https://dashing-snickerdoodle-73764c.netlify.app/*  https://proroof.my/:splat  301!
+
+# 2) www 子域名 → 根域名（以防万一，仍做一次显式 301）
+https://www.proroof.my/*  https://proroof.my/:splat  301!
+
+# 3) 单页应用（SPA）重写，让刷新 /BM 或任意路径都回到 index.html
+/*  /index.html  200
+
 /thank-you        /thank-you        200
 /thank-you.html   /thank-you.html   200
 /*                /index.html       200
